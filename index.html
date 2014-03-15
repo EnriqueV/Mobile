@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html lang="es">
+	<head>
+		<title>Cosina Salavadoreña</title>
+		<meta charset="utf-8" />
+		<link href='http://fonts.googleapis.com/css?family=Graduate' rel='stylesheet' type='text/css'>
+                   <link rel="stylesheet" type="text/css" href="style/botones.css"/>
+		<style>
+			body{
+				background-image: url('madera.jpg');
+                                background-repeat: no-repeat;
+                              
+			}
+			#container{
+				width: 500px;
+				margin: 30px auto;
+			}
+			header{
+				color: #fff;
+				font-family: 'italic', cursive;
+				text-align: center;
+			}
+			
+			.tile{ /*Estructura inicial de cualquier tile*/
+				cursor: pointer;
+				margin: 40px auto;
+				width: 200px;
+				height: 100px;
+			}
+			.tileC{/*Contenedor del tile Primario*/
+				width: 200px;
+				height: 100px;
+				overflow: hidden;
+			}
+			.tileS{/*Contenedor del tile Secundario*/
+				color: #fff;
+				font-family:"Segoe UI";
+				width: 200px;
+				height: 100px;
+			}
+			.extra1{
+				background:#4D4DFF;
+				
+			}
+			.extra2{
+				background: #40152A;
+                               
+			}
+			.extra3{
+				background:#238E23;
+				
+			}
+			/* Personalización de los colores de fondo e imágenes de fondo*/
+			.azul{
+				background:#238E23  url('diner.png');
+                                background-repeat: no-repeat;
+                                background-position: center 10px;       
+				color:#000000;
+				width: 300px;
+				height: 300px;
+			}
+			.rojo{
+				background:#4D4DFF url('bebida.png');
+				background-repeat: no-repeat;
+				background-position: center 10px;
+				color:#000000;
+			}
+			.naranja{
+                               background:#FF7F00  url('web.png');
+				background-repeat: no-repeat;
+				background-position: center 10px;
+				color:#000000;
+			}
+
+			/* Para la fuente de los titulos y la info extra*/
+			.titulo{
+				font-family:"italic";
+				line-height: 170px;
+				padding-left: 0px;
+				height: 100px;
+				width: 100px;
+			}
+			
+
+			.big{
+				font-size: 30px;
+			}
+
+			@-webkit-keyframes kof{
+				0%, 20%{margin-top:   0;}
+				/*20%{margin-top:  0;}*/
+				30%{margin-top: -20px;}
+				40%, 50%{margin-top: -40px;}
+				/*50%{margin-top: -40px;}*/
+				60%, 90%{margin-top: -100px;}
+				/*90%{margin-top: -100px;}*/
+				100%{margin-top: 0;}
+			}
+			@-moz-keyframes kof{
+				0%, 20%{margin-top:   0;}
+				/*20%{margin-top:  0;}*/
+				30%{margin-top: -20px;}
+				40%, 50%{margin-top: -40px;}
+				/*50%{margin-top: -40px;}*/
+				60%, 90%{margin-top: -100px;}
+				/*90%{margin-top: -100px;}*/
+				100%{margin-top: 0;}
+			}
+			@keyframes kof{
+				0%, 20%{margin-top:   0;}
+				/*20%{margin-top:  0;}*/
+				30%{margin-top: -20px;}
+				40%, 50%{margin-top: -40px;}
+				/*50%{margin-top: -40px;}*/
+				60%, 90%{margin-top: -100px;}
+				/*90%{margin-top: -100px;}*/
+				100%{margin-top: 0;}
+			}
+			
+			.inicial{
+				-webkit-animation: kof 15s;	
+				-webkit-animation-iteration-count: infinite;
+
+				-moz-animation: kof 15s;	
+				-moz-animation-iteration-count: infinite;
+
+				animation: kof 15s;	
+				animation-iteration-count: infinite;
+			}
+			.retraso1{
+				-webkit-animation: kof 15s;	
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-delay: 2s;
+
+				-moz-animation: kof 15s;	
+				-moz-animation-iteration-count: infinite;
+				-moz-animation-delay: 2s;
+
+				animation: kof 15s;	
+				animation-iteration-count: infinite;
+				animation-delay: 2s;
+			}		
+			.retraso2{
+				-webkit-animation: kof 15s;	
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-delay: 4s;
+
+				-moz-animation: kof 15s;	
+				-moz-animation-iteration-count: infinite;
+				-moz-animation-delay: 4s;
+
+				animation: kof 15s;	
+				animation-iteration-count: infinite;
+				animation-delay: 4s;
+			}
+			.retraso3{
+				-webkit-animation: kof 15s;	
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-delay: 3s;
+
+				--animation: kof 15s;	
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-delay: 3s;
+
+				animation: kof 15s;	
+				animation-iteration-count: infinite;
+				animation-delay: 3s;
+			}			
+		</style>
+	</head>
+	<body>
+		<header>
+				<h1>Recetas de Platillos</h1>
+				<p>Salavadoreños</p>
+			</header>
+		<div id="container">
+			<div class="tile"><!--Inicio del contenedor-->
+				<div class="tileC">
+					<div class="titulo azul inicial">
+<input type="button" onClick="window.open('menu.html',target='_self' )" value="Recetas" >
+					</div>
+					<div class="tileS extra1 ">
+						&nbsp;
+         
+                                              <p>¡¡¡Comida deliciosa!!!
+                                                Recetas de El salvador</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="tile"><!--Inicio del contenedor-->
+				<div class="tileC">
+					<div class="titulo rojo retraso2">
+	<input type="button" onClick="window.open('menu2.html',target='_self')" value="Bebidas" >
+					</div>
+					<div class="tileS extra2">
+						<span class="big"></span>
+						<p>Las mejores bebidas de
+                                                 El salvador encuentralas 
+                                                 aqui...
+                                                </p>
+                                           
+					</div>
+				</div>
+			</div>
+			
+			<div class="tile"><!--Inicio del contenedor-->
+				<div class="tileC">
+					<div class="titulo naranja retraso1">
+	                                 Más..
+			</div>
+					<div class="tileS extra3">
+                                            <p>Más recetas visita:</p>
+                                            <p>cookingelsavador.site11
+                                           .com</p>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</body>
+</html>

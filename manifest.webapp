@@ -1,0 +1,19 @@
+{
+  "name": "Food El salvador",
+  "description": "Recetas de Comida Salvadoreña",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/som.png"
+  },
+  "developer": {
+    "name": "Eduardo Gomez Valencia",
+    "url": "http://groupdeveloper.hol.es"
+  },
+  "default_locale": "es"
+}
+
+
+
+
+
+

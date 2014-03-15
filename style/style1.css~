@@ -1,0 +1,2 @@
+#la-lista{ position:relative; }
+#la-lista li{ position:absolute:top:0;left:0;}
