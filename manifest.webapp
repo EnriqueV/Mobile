@@ -1,6 +1,5 @@
-
 Content-Type:
-application/x-web-app-manifest+json;
+https://github.com/EnriqueV/Mobile
 {
   "name": "Food El salvador",
   "description": "Recetas de Comida Salvadoreña",
