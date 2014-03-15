@@ -1,4 +1,4 @@
-AddType application/x-web-app-manifest+json .webapp
+Content-Type: application/x-web-app-manifest+json; charset=ISO-8859-4
 {
   "name": "Food El salvador",
   "description": "Recetas de Comida Salvadoreña",
